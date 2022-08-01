@@ -12,12 +12,20 @@
         }
 
         /*4)
-         각 .inner section 스타일에서 2+300+2 (왼쪽선 굵기+가로크기+오른쪽선 굵기)*3개 */
+         각 .inner section 스타일에서 2+300+2 (왼쪽선 굵기+가로크기+오른쪽선 굵기)*3개 
         .container{
             border: 2px solid blue;
             width: 912px;
             margin: auto;
-        }        
+        }
+        */
+        
+        /*5) 4)를 다른 방법으로 표현(3)을 고치니까 그 부분 확인*/
+        .container{
+            border: 2px solid blue;
+            width: 900px;
+            margin: auto;
+        }
 
         /*2)*/
         header{
@@ -28,14 +36,25 @@
             text-align: center;
         }
 
-        /*3)*/
+        /*3)
         .inner section{
             border: 2px solid green;
             width: 300px;
             height: 300px;
             float: left;
-            
         }
+        */
+
+        /*6)*/
+        .inner section{
+            border: 2px solid green;
+            width: 300px;
+            height: 300px;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box; /*선굵기, 여백등으로 늘어난 부분은 container의 width=900px내에서 해결함*/
+        }
+
     </style>
 </head>
 <body>
