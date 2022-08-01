@@ -11,6 +11,7 @@
          fixed 화면영역 기준 (브라우저를 기준으로) 예)위로, 아래로, 퀵메뉴 등
         */
         /*1)*/
+        /*
         #s1 ul{background-color: rgb(30, 162, 250);}
         #s1 li:nth-child(1){background-color: red; }
         #s1 li:nth-child(2){background-color: green;
@@ -20,6 +21,19 @@
                             left: 100px; 
                             top: 100px}
         #s1 li:nth-child(3){background-color: blue;}
+        */
+
+        /*2)화면 하단에 고정 */
+        #s1 ul{background-color: rgb(30, 162, 250);}
+        #s1 li:nth-child(1){background-color: red; }
+        #s1 li:nth-child(2){background-color: green;
+                            position: fixed;
+                            bottom: 0;
+                            height: 80px;
+                            width: 100%;
+                        }
+        #s1 li:nth-child(3){background-color: blue;}
+
     </style>
 </head>
 <body>
