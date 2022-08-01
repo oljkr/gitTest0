@@ -2,8 +2,24 @@
 <html lang="ko">
 <head>
     <title>09_absolute.html</title>
+    <!--현재 페이지에서 CSS 초기화-->
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /*#s1 ul{background-color: rgb(30, 162, 250); height: 300px;}*/
+        /*s1 요소에서 li요소에서 첫번째 요소에 효과를 주는 코드*/
+        /*#s1 li:nth-child(1){background-color: orange; position: absolute; left: 100px; top: 30px;}*/
+        /*#s1 li:nth-child(1){background-color: orange; position: absolute; right: 0; bottom: 0;}*/
+    </style>
 </head>
 <body>
-    
+    <!-- 절대적 위치 position:absolute -->
+    <section id="s1">
+        <h3>position:absolute</h3>
+        <ul>
+            <li>국어</li>
+            <li>영어</li>
+            <li>수학</li>
+        </ul>
+    </section>
 </body>
 </html>
