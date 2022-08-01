@@ -19,6 +19,7 @@
 
         /*2)부모 영역을 기준으로 position:relative*/
         /* 부모 ul, 자식 li */
+        /*
         #s1 ul{background-color: rgb(30, 162, 250); height: 300px; position:relative;}
         #s1 li:nth-child(1){background-color: red; 
                             position: absolute; 
@@ -29,7 +30,15 @@
                             }
         #s1 li:nth-child(2){background-color: green;}
         #s1 li:nth-child(3){background-color: blue;}
+        */
 
+        /*3)*/
+        #s1 ul{background-color: rgb(30, 162, 250); height: 300px; width: 300px; position:relative;}
+        /*너비가 부모를 기준으로 자식이 정해지기 때문에 부모인 ul이 300px이기 때문이 실제로는 300px이 된다.*/
+        #s1 li:nth-child(1){background-color: red; position: absolute; right: 0; bottom: 0; width:100%
+                            }
+        #s1 li:nth-child(2){background-color: green;}
+        #s1 li:nth-child(3){background-color: blue;}
 
 
     </style>
