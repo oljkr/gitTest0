@@ -61,7 +61,10 @@
 
         /*float속성은 전 요소 속성을 상속받는 특징이 있음. 이미 float:left가 있는 상태임*/
         /*8)*/
-        footer { border: 5px solid orange; height: 100px; float: left;}
+        /*footer { border: 5px solid orange; height: 100px; float: left;}*/
+        
+        /*9)clear : float 속성 해제. 6)에서 상속받은 float:left속성을 지워야 함*/
+        footer { border: 5px solid orange; height: 100px; clear: left;}
 
     </style>
 </head>
