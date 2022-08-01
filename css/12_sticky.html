@@ -9,8 +9,20 @@
         #s1 li:nth-child(2){background-color: green;}
         #s1 li:nth-child(3){background-color: blue;}
         
-        #header{ height: 70px;background-color: darkslateblue; position: fixed; width: 100%;}
+        /*1) position: fixed주면 다음 요소를 덮어 버림*/
+        /*#header{ height: 70px; background-color: darkslateblue; position: fixed; width: 100%;}*/
         
+        /*2)*/
+        /*아래 줄처럼 하면 고정이 안 됨 */
+        /*#header{ height: 70px; background-color: darkslateblue; position: sticky; width: 100%;}*/
+        /*sticky가 스크롤을 내려도 고정으로 있게 하려면 늘 top을 0으로 줘야함!!*/
+        /*완성코드*/
+        #header{ height: 70px; 
+                 background-color: darkslateblue; 
+                 position: sticky; 
+                 width: 100%; 
+                 top:0; /*sticky 줄때 필수 사항*/
+                }
 
     </style>
 </head>
