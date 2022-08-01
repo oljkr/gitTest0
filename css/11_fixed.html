@@ -24,6 +24,7 @@
         */
 
         /*2)화면 하단에 고정 */
+        /*
         #s1 ul{background-color: rgb(30, 162, 250);}
         #s1 li:nth-child(1){background-color: red; }
         #s1 li:nth-child(2){background-color: green;
@@ -33,7 +34,18 @@
                             width: 100%;
                         }
         #s1 li:nth-child(3){background-color: blue;}
+        */
 
+        /*3) 부모포지션 지정. */
+        #s1 ul{background-color: rgb(30, 162, 250); position: relative; height: 300px;}
+        #s1 li:nth-child(1){background-color: red; }
+        #s1 li:nth-child(2){background-color: green;
+                            position: fixed;
+                            bottom: 0;
+                            height: 80px;
+                            width: 100%;
+                        }
+        #s1 li:nth-child(3){background-color: blue;}
     </style>
 </head>
 <body>
