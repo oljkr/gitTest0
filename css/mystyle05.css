@@ -55,7 +55,7 @@ div>span>h2 {
     color: rgb(29, 23, 116);
 }
 
-/*화면에서 안 보이게 하는 건 html에서 div잡고 display를 none잡는 방법도 있지만
+/*화면에서 안 보이게 는 건 html에서 div잡고 display를 none잡는 방법도 있지만
  css에서 아래와 같이 처리해도 화면에서 보이지 않게 된다.*/
 .hide {
     width: 0;
@@ -63,4 +63,33 @@ div>span>h2 {
     margin: 0;
     padding: 0;
     font-size: 0;
+}
+
+#nav{
+    width: 300px;
+    height: 500px;
+    background: beige;
+    margin: auto;
+}
+
+#nav>ul{ /* id=nav의 자식중에서 ul태그*/
+    list-style: none;
+
+}
+
+#nav .news{/*id=nav안에서 모든 class=news*/
+    background: olive;
+    font-weight: bold;
+}
+
+#nav>ol>li:nth-child(2){/*<li>요소중에서 2번째*/
+    font-weight: bold;
+}
+
+/*아이티윌 링크만 CSS적용*/
+#nav>ol>li>a{
+    width: 200px;
+    height: 100px;
+    background-color: hotpink;
+    text-decoration-style: wavy;
 }
