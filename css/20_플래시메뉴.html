@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>20_플래시메뉴.html</title>
+    <style>
+        .hide{
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        #nav{
+            width: 200px;
+            margin: 0 auto;
+            background-color: silver;
+        }
+
+        #nav>ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /*1) 링크되는 문자열 스타일*/
+        #nav>ul>li>a{
+            text-decoration: none ;
+            font-weight: bold;
+            color: black;
+            width: 200px;
+            height: 64px;
+            display: block;
+            text-indent: 30px; /*들여쓰기*/
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hide">플래시메뉴</h1>
+
+    <div id="nav">
+        <h2 class="hide">주요메뉴</h2>
+        <ul>
+            <li><a href="#">flickr</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">newsvine</a></li>
+            <li><a href="#">last.fm</a></li>
+        </ul>
+    </div>
+</body>
+</html>
