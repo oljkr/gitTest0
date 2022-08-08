@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_for연습문제.html</title>
+  </head>
+  <body>
+    <script>
+
+    //문1) 아래와 같이 출력하시오
+    /*
+       12345
+       23456
+       34567
+       45678
+       56789
+    */
+
+    for(let y=1;y<6;y++){
+        for(let x=y;x<y+5;x++){
+            document.write(x);
+        }
+        document.write("<br>");
+    }
+    document.write("<hr>");
+
+    //문2)아래 그림과 같이 출력하시오
+    /*
+	@★★★
+	★@★★
+	★★@★
+	★★★@            
+    */
+
+    for(let y=0;y<4;y++){
+        for(let x=0;x<4;x++){
+            if(y==x){
+                document.write("@");
+                continue;
+            }
+            document.write("★");
+        }
+        document.write("<br>");
+    }
+    document.write("<hr>");
+    //문3) 아래와 같이 누적의 합을 출력하시오 (회전수 증가)
+    /*
+       1+ ... +10=55
+       1+ ... +20=210
+       1+ ... +30=465
+       
+       1+ ... +90=
+       1+ ... +100=5050            
+    */
+
+    let sum=0;
+    for(let y=10;y<=100;y+=10){
+        sum=0;
+        for(let x=1;x<=y;x++){
+            sum+=x;
+        }
+        document.write("1+ ... +"+y+"="+sum+"<br>");
+    }
+    document.write("<hr>");
+
+    //문4) 1~100사이 중에서 짝수의 합, 홀수의 합을 각각 구하시오
+    let hapEven=0;
+    let hapOdd=0;
+    for(let y=1;y<=100;y++){
+        if(y%2==0){
+            hapEven+=y;
+        }
+        else hapOdd+=y;
+    }
+    document.write("짝수의 합"+hapEven+"<br>");
+    document.write("홀수의 합"+hapOdd+"<br>");
+    document.write("<hr>");
+
+    </script>
+  </body>
+</html>
