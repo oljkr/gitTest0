@@ -9,7 +9,7 @@
         #demo {
             height: 400px;
             width: 250px;
-            background-color: rgb(235, 172, 209);
+            background-color: rgb(235, 183, 213);
             color: black;
         }
         table {
@@ -120,12 +120,11 @@
         result+="   <td>" + Math.round(aver);
         result+="</tr>";
 
-        result+= "<tr>";
-        result+= "  <th>결과</th>";
-        result+="   <td>" + score +"<br>"+mun2+"<br>"+mun3+"<br>"+mun4+"</td>";
-        result+="</tr>";
-
-        document.getElementById("demo").innerHTML=result; //결과값을 HTML tag형식으로 출력
+        // result+= "<tr>";
+        // result+= "  <th>결과</th>";
+        // result+="   <td>" + score +"<br>"+mun2+"<br>"+mun3+"<br>"+mun4+"</td>";
+        // result+="</tr>";
+        // 결과 칸은 아래쪽 선생님이 짠 코드로도 할 수 있는 거 알아두기
         
         //선생님이 짠 코드
         //문1)학점 구하기
@@ -158,11 +157,29 @@
         }
 
         //문4) 장학생
-        let special = "";
+        let special = "&nbsp";
         if(aver>=95) {
-            special = "<span style='color:red; font-weight:bold>장학생</span>";
+            special = "<span style='color:red; font-weight:bold'>장학생</span>";
         }
 
+        result+= "<tr>";
+        result+= "  <th rowspan='4'>결과</th>";
+        result+="   <td>" + grade+"</td>";
+        result+="</tr>";
+
+        result+= "<tr>";
+        result+="   <td>" + pass+"</td>";
+        result+="</tr>";
+
+        result+= "<tr>";
+        result+="   <td>" + star+"</td>";
+        result+="</tr>";
+
+        result+= "<tr>";
+        result+="   <td>" + special +"</td>";
+        result+="</tr>";
+
+        document.getElementById("demo").innerHTML=result; //결과값을 HTML tag형식으로 출력
 
     </script>
   </body>
